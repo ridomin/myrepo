@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "workspaces" : [
-    "libs/rido-hw"
+    "libs/rido-hw",
+    "libs/lib23"
   ],
   "scripts": {
     "test": "node index.js"
