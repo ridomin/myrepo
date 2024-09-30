@@ -18,6 +18,9 @@ steps:
     versionSource: 'spec'
     versionSpec: '20.*'
 
+- script: npm i
+  displayName: npm_install
+
 - script: npm ci
   displayName: "run ci"
 
