@@ -13,6 +13,17 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+- task: NodeTool@0
+  inputs:
+    versionSource: 'spec'
+    versionSpec: '20.*'
+
+- script: npm ci
+  displayName: "run ci"
+
+- script: npm run test
+  displayName: runtest
+  
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
